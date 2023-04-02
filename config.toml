@@ -1,8 +1,11 @@
 baseURL = 'https://lciprian.github.io/'
 languageCode = 'en-us'
 title = 'Ciprian Lazar'
-themesDir = 'themes'
 theme = 'almeida-cv'
+
+[module]
+[[module.imports]]
+  path = 'github.com/ineesalmeida/almeida-cv'
 
 [params]
 enableMetaTags = true
