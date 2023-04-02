@@ -1,0 +1,176 @@
+BasicInfo:
+  FirstName: Ciprian
+  LastName: Lazar
+  Photo: img/ciprian_lazar.jpg
+  Contacts:
+    - Icon: fas fa-phone
+      Info: +40 742 126 607
+    - Icon: fas fa-envelope
+      Info: lazar.ciprian07@gmail.com
+    - Icon: fas fa-globe
+      Info: <a class="contact__link" href="https://github.com/lciprian" target="_blank">github.com/lciprian</a>
+    - Icon: fas fa-map-marker-alt
+      Info: Romania
+
+Profile: 'Go enthusiast and experienced PHP Programmer with a demonstrated history of working in the information technology and services industry.<br/>
+  Self-discipline, committed, able to make right decisions in stressful and risky conditions of high stake projects and take full responsibility for them. Goal-oriented mind effective in finding new ideas and optimal solutions.'
+
+Experience:
+  - Employer: IV Future
+    Place: Galati, RO
+    Positions:
+      - Title: Senior Developer
+        Date: Aug 2020 - Present
+        Details:
+        Responsibilities:
+          Title: MAIN RESPONSIBILITIES
+          Details:
+            - Design user interfaces and navigation menus
+            - Design, maintain and optimize the databases
+            - Architect and decide technical solutions
+            - Implement the functionality based on given requirements
+            - Collaborate closely with the client to understand and negotiate requirements
+            - Coordinate a team of software developers in order to fully implement client requirements
+        Projects:
+          Title: PROJECTS
+          Details:
+            - Microsoft Xbox account integration to retrieve in game achievements
+            - Media asset upload and processing(images, videos, documents, fonts) with resizes of multiple asset
+              variants
+            - Image processing for print on demand(generate new image based on multiple sources, with
+              barcodes and bleeding lines)
+            - Data Import/Export module for csv, xml and xls formats for a data management application
+            - Contribute to the digitalization of Romanian fishing sector on the project “Realizarea și
+              Implementarea Programului Naţional pentru Colectarea Datelor din Sectorul Pescăresc al României,
+              pentru perioada 2021” – subcontract I.C.D.E.A.P.A. Galați.nr. 109/15.12.2020
+            - Digital Marketing application for stores including segmentation, email campaigns
+            - Application tools for Shopify merchants to acquire customers for less and to retain more for longer
+              through a central CRM optimized for Shopify
+            - Custom WordPress integration with ZOHO
+        Badges: ['golang', 'PHP', 'NodeJS', 'MongoDB', 'MySQL', 'OOP', 'Jira', 'Git', 'Laravel', 'docker', 'Agile', 'Redis', 'Linux', 'AWS', 'RabbitMQ']
+  - Employer: Expremio Technology
+    Place: Galati, RO
+    Positions:
+      - Title: Senior PHP Developer
+        Date: Nov 2018 - Aug 2020
+        Details:
+        Responsibilities:
+          Title: MAIN RESPONSIBILITIES
+          Details:
+            - Design user interfaces and navigation menus
+            - Design, maintain and optimize the databases
+            - Architect and decide technical solutions
+            - Implement the functionality based on given requirements
+            - Collaborate closely with the client to understand and negotiate requirements
+            - Coordinate a team of software developers in order to fully implement client requirements
+        Projects:
+          Title: PROJECTS
+          Details:
+            - Digital Marketing application for restaurants and hotels including data aggregation, segmentation,
+              loyalty, email, SMS, push campaigns and AI suggestions.
+            - E-Commerce application for restaurants
+        Badges: ['PHP', 'MySQL', 'OOP', 'Jira', 'Git', 'Laravel', 'Agile', 'Redis', 'Linux', 'AWS']
+  - Employer: goCaution
+    Place: Switzerland
+    Positions:
+      - Title: Web Developer(remote)
+        Date: Nov 2016 - Ian 2018
+        Details:
+        Responsibilities:
+          Title: MAIN RESPONSIBILITIES
+          Details:
+            - Design user interfaces and navigation menus
+            - Design, maintain and optimize the databases
+            - Integrate multimedia content onto site
+            - Ensure the proper collaboration with the client and team
+        Projects:
+          Title: PROJECTS
+          Details:
+            - Website and custom web application development
+            - Developed custom features for US VOIP company(buying telephone numbers, number routing,
+              E911 provisioning, send/ receive faxes, phone call statistics and billing)
+            - Marketing campaigns calendar(multiple social media integration, statistics aggregation)
+            - Newspaper CRM(article writing, article validating, print document generation)
+            - Newspaper small advertisement CRM(collect adds, payments, print document generation, reporting)
+            - Advertising application on back of register tape
+        Badges: ['PHP', 'MySQL', 'jQuery', 'Joomla', 'Ajax', 'HTML', 'CSS']
+  - Employer: SC Activemall SRL
+    Place: Galati, RO
+    Class: "experience__extra_padding"
+    Positions:
+      - Title: Web Programmer
+        Date: May 2008 - Nov 2018
+        Details:
+        Responsibilities:
+          Title: MAIN RESPONSIBILITIES
+          Details:
+            - Design user interfaces and navigation menus
+            - Design, maintain and optimize the databases
+            - Design, maintain and optimize the databases
+            - Integrate multimedia content onto site
+            - Ensure the proper collaboration with the client and team
+        Projects:
+          Title: PROJECTS
+          Details:
+            - Website and custom web application development
+            - Developed custom features for US VOIP company(buying telephone numbers, number routing,
+              E911 provisioning, send/ receive faxes, phone call statistics and billing)
+            - Marketing campaigns calendar(multiple social media integration, statistics aggregation)
+            - Newspaper CRM(article writing, article validating, print document generation)
+            - Newspaper small advertisement CRM(collect adds, payments, print document generation, reporting)
+            - Advertising application on back of register tape
+        Badges: ['PHP', 'golang', 'MySQL', 'jQuery', 'Joomla', 'Laravel', 'Codeigniter', 'HTML', 'Bootstrap', 'Linux']
+
+Education:
+  - Course: Bachelor's degree Computer Science
+    Place: Faculty of Computer Science, Galati
+    Date: Oct 2012 - June 2007
+    Details: Engineer
+
+References:
+
+Skills:
+  - Family: Programming
+    Items:
+      - Golang
+      - PHP
+      - NodeJS
+      - React
+      - Javascript
+      - Mysql
+      - MongoDB
+      - Redis
+      - RabbitMQ
+      - Keycloak
+      - HTML
+      - CSS
+      - SASS
+  - Family: Frameworks
+    Items:
+      - Laravel
+      - Joomla
+      - Wordpress
+      - React
+  - Family: Developer Tools
+    Items:
+      - Git
+      - Docker
+      - Kubernetes
+      - AWS
+      - Jira
+
+Languages:
+  - Name: Romanian
+    Level: Native
+  - Name: English
+    Level: C2
+
+Diplomas:
+  - Formator (2018)
+  - Bachelor's degree Computer Science (2007)
+
+Interests:
+  - Travel
+  - Puzzle
+  - Running
+  - Games
