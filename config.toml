@@ -1,6 +1,7 @@
 baseURL = 'https://lciprian.github.io/'
 languageCode = 'en-us'
 title = 'Ciprian Lazar'
+themesDir = 'themes'
 theme = 'almeida-cv'
 
 [params]
