@@ -155,10 +155,6 @@ googleAnalytics = ""
             details = "Integrated WordPress with Zoho, performed security updates, and improved code performance."
             stack = "PHP, Mysql, HTML/CSS/JS, Wordpress"
         [[params.experience.list]]
-        title = "goCaution AG Bern, Switzerland"
-        dates = "Nov 2016 - Ian 2018"
-        position = "PHP Developer/Team lead"
-        [[params.experience.list]]
         title = "Expremio Technology Galati, RO"
         dates = "Nov 2018 - Aug 2020"
         position = "Senior PHP Developer"
