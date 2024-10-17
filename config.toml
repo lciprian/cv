@@ -24,15 +24,15 @@ googleAnalytics = ""
 
         [[params.contact.list]]
         icon = "fas fa-phone-square"
-        url = "tel:#"
+        url = "tel:40742126607"
         text = "+40 742 126 607"
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
-        url = "mailto:#"
+        url = "mailto:lazar.ciprian07@gmail.com"
         text = "lazar.ciprian07@gmail.com"
         [[params.contact.list]]
         icon = "fas fa-globe"
-        url = "#"
+        url = "//github.com/lciprian"
         text = "github.com/lciprian"
 
     [params.skills]
@@ -237,19 +237,18 @@ googleAnalytics = ""
         title = "Interests"
         details = "Climbing, Snowboarding, Photography, Travelling"
 
-
     [params.social]
         enable = true
 
         [[params.social.list]]
         icon = "fab fa-github-square"
-        url = "//github.com/username"
-        title = "username"
+        url = "//github.com/lciprian"
+        title = "lciprian"
         [[params.social.list]]
         icon = "fab fa-linkedin"
-        url = "//linkedin.com/in/username"
-        title = "username"
+        url = "//linkedin.com/in/lciprian/"
+        title = "lciprian"
         [[params.social.list]]
         icon = "fab fa-twitter-square"
-        url = "//twitter.com/username"
-        title = "@username"
+        url = "//x.com/CiprianLazar"
+        title = "@CiprianLazar"
