@@ -43,6 +43,8 @@ googleAnalytics = "G-L1XTSMJCLP"
         [[params.skills.list.items]]
         details = "PHP/Laravel/Joomla/Wordpress"
         [[params.skills.list.items]]
+        details = "Golang"
+        [[params.skills.list.items]]
         details = "Javascript/React"
         [[params.skills.list.items]]
         details = "Mysql/PostgresMongoDB/Redis"
@@ -68,7 +70,7 @@ googleAnalytics = "G-L1XTSMJCLP"
         [[params.education.list]]
         degree = "Bachelor's degree in Computer Science"
         university = "Faculty of Computer Science, Galati"
-        dates = "2007 - 2012"
+        dates = "2002 - 2007"
 
     [params.awards]
         enable = false
@@ -87,10 +89,10 @@ googleAnalytics = "G-L1XTSMJCLP"
         enable = true
 
         [[params.languages.list]]
-        name = "English"
+        name = "Romanian"
         level = "Native"
         [[params.languages.list]]
-        name = "Spanish"
+        name = "English"
         level = "Professional"
 
     [params.interests]
