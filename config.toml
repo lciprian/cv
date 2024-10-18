@@ -1,26 +1,254 @@
-baseURL = 'https://lciprian.github.io/'
-languageCode = 'en-us'
-title = 'Ciprian Lazar'
-
-[module]
-[[module.imports]]
-  disable = false
-  path = 'github.com/ineesalmeida/almeida-cv'
+# Page settings
+baseURL = "https://lciprian.github.io/cv/"
+languageCode = "en"
+title = "Ciprian Lazar"
+theme = "hugo-devresume-theme"
+googleAnalytics = "G-L1XTSMJCLP"
 
 [params]
-enableMetaTags = true
-colorLight = "#fff"
-colorDark = "#666"
-colorPageBackground = "#ddd"
-colorPrimary = "#3f6592"
-colorSecondary = "#aaa"
-colorIconPrimary = "#fff"
-colorIconBackground = "#3f6592"
-colorRightColumnBackground = "#f5f5f5"
-colorRightColumnHeadingText = "#666"
-colorRightColumnBodyText = "#666"
-colorRightColumnIconPrimary = "#fff"
-colorRightColumnIconBackground = "#3f6592"
-pages = 2
-# Set this param to 'true' to swap the bar positions
-swapColumns = false
+    author = "Ciprian Lazar"
+    description = "DevResume - Bootstrap 4 Resume/CV Template For Software Developers"
+
+    primaryColor = "#3f6592"
+    textPrimaryColor = "#292929"
+
+    [params.profile]
+        enable = true
+        name = "Ciprian Lazar"
+        tagline = "Senior Software Engineer"
+        avatar = "ciprian_lazar.jpg"
+
+    [params.contact]
+        enable = true
+        location = "Galati/Romania"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:40742126607"
+        text = "+40 742 126 607"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:lazar.ciprian07@gmail.com"
+        text = "lazar.ciprian07@gmail.com"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "//github.com/lciprian"
+        text = "github.com/lciprian"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Technical"
+        [[params.skills.list.items]]
+        details = "PHP/Laravel/Joomla/Wordpress"
+        [[params.skills.list.items]]
+        details = "Javascript/React"
+        [[params.skills.list.items]]
+        details = "Mysql/PostgresMongoDB/Redis"
+        [[params.skills.list.items]]
+        details = "RabbitMQ"
+        [[params.skills.list.items]]
+        details = "Keycloak"
+        [[params.skills.list.items]]
+        details = "HTML/CSS"
+
+        [[params.skills.list]]
+        title = "Professional"
+        [[params.skills.list.items]]
+        details = "Effective communication"
+        [[params.skills.list.items]]
+        details = "Team player"
+        [[params.skills.list.items]]
+        details = "Strong problem solver"
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "Bachelor's degree in Computer Science"
+        university = "Faculty of Computer Science, Galati"
+        dates = "2007 - 2012"
+
+    [params.awards]
+        enable = false
+
+        [[params.awards.list]]
+        name = "Award Lorem Ipsum"
+        body = "Microsoft lorem ipsum"
+        date = "2019"
+        [[params.awards.list]]
+        name = "Award Donec Sodales"
+        body = "Oracle Aenean"
+        date = "2017"
+
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "English"
+        level = "Native"
+        [[params.languages.list]]
+        name = "Spanish"
+        level = "Professional"
+
+    [params.interests]
+        enable = true
+
+        [[params.interests.list]]
+        name = "Traveling"
+        [[params.interests.list]]
+        name = "Puzzles"
+        [[params.interests.list]]
+        name = "Running"
+        [[params.interests.list]]
+        name = "Gaming"
+
+    [params.summary]
+        enable = true
+        text = "Go enthusiast and experienced PHP Programmer with a demonstrated history of working in the information technology and services industry. Self-discipline, committed, able to make right decisions in stressful and risky conditions of high stake projects and take full responsibility for them. Goal-oriented mind effective in finding new ideas and optimal solutions."
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "IV Future Galati, RO Aug 2020 - Present"
+        dates = "Aug 2020 - Present"
+        position = "Senior Developer/Team lead"
+        [[params.experience.list.projects]]
+            title = "Multitenant Marketing Application - Romania"
+            details = "Multitenant marketing tool integrated with applications like Shopify and Medusa.js, enabling email campaigns, transactional emails, customer segmentation and template editing."
+            impact = "Improve client retention and engagement."
+            team = "Led 3 developers"
+            stack = "NodeJs, NestJs, React, Redis, Shopify, AWS"
+        [[params.experience.list.projects]]
+            title = "Warehouse Management System (WMS) - Romania"
+            details = "Cloud-based WMS integrated with Gomag, easySales, and MerchantPro, streamlining warehouse operations and real-time inventory management."
+            impact = "Increased turnover by automating processes and improving operational efficiency."
+            team = "Led 1 developers"
+            stack = "PHP, Mysql, Redis, HTML/CSS/JS, RabbitMq, Symfony"
+        [[params.experience.list.projects]]
+            title = "Shop integration with Microsoft Xbox account POC  - UK"
+            details = "Integrated Microsoft Xbox accounts to retrieve in-game achievements for enhanced user shop experience."
+            impact = "Improved client retention and engagement by offering personalized gaming rewards."
+            stack = "NodeJs, MongoDB, HTML/CSS/JS, Bootstrap, Passport"
+        [[params.experience.list.projects]]
+            title = "Media library application - UK"
+            details = "Media asset upload and processing platform handling images, videos, and documents, with print-on-demand features for image collage generation."
+            impact = "Reduced operational costs through automation of asset processing and order fulfillment."
+            team = "Led 2 developers"
+            stack = "Golang, MongoDB, RabbitMQ, Amazon S3, Keycloak, Kubernetes"
+        [[params.experience.list.projects]]
+            title = "Email Automation Platform  - UK"
+            details = "Multitenant email automation platform with segmentation, template customization and quota management, handling high-volume email marketing campaigns."
+            impact = "Improved client engagement by sending ~130K marketing emails in under 15 minutes."
+            team = "Led 2 developers"
+            stack = "NodeJs, Golang, Mysql, FeathersJS, RabbitMq, Amazon S3, SendGrid, Keycloak, Kubernetes"
+        [[params.experience.list.projects]]
+            title = "Application tools for Shopify merchants - UK"
+            details = "Application suite to help Shopify merchants optimize customer acquisition and retention through a centralized CRM."
+            impact = "Improve customer retention and acquisition for Shopify merchants."
+            stack = "PHP, Mysql, Redis, HTML/CSS/JS, Laravel, Shopify, AWS"
+        [[params.experience.list.projects]]
+            title = "Custom WordPress integration and maintenance - UK"
+            details = "Integrated WordPress with Zoho, performed security updates, and improved code performance."
+            stack = "PHP, Mysql, HTML/CSS/JS, Wordpress"
+        [[params.experience.list]]
+        title = "Expremio Technology Galati, RO"
+        dates = "Nov 2018 - Aug 2020"
+        position = "Senior PHP Developer"
+        [[params.experience.list.projects]]
+            title = "E-Commerce application for restaurants - Bucharest, RO"
+            details = "E-Commerce application for restaurants, menu, orders and stock management for clients like Citygrill, Nikosgreektaverna."
+            stack = "PHP, Mysql, HTML/CSS/JS, Laravel"
+        [[params.experience.list.projects]]
+            title = "Digital Marketing application  - Romania, Cyprus"
+            details = "Digital Marketing solution designed for restaurants and hotels, including email/SMS/push campaigns and loyalty programs."
+            impact = "Improve client retention and engagement."
+            stack = "PHP, Mysql, Redis, HTML/CSS/JS, Laravel, Amazon S3, Amazon SNS"
+        [[params.experience.list]]
+        title = "goCaution AG Bern, Switzerland"
+        dates = "Nov 2016 - Ian 2018"
+        position = "PHP Developer/Team lead"
+        [[params.experience.list.projects]]
+            title = "Tenant/Landlord property managers application  - Switzerland"
+            details = "Property management system for tenant/landlord interactions, improving tenant experience and reducing administrative overhead."
+            impact = "Reduced onboarding time and manual processing."
+            team = "Lead 3 developers"
+            stack = "PHP, Mysql, HTML/CSS/JS, Laravel"
+        [[params.experience.list.projects]]
+            title = "CRM application for house rental insurance - Switzerland"
+            details = "House rental insurance system, covering payments and sales reporting."
+            stack = "PHP, Mysql, HTML/CSS/JS, Joomla, Bootstrap"
+        [[params.experience.list]]
+        title = "SC Activemall SRL Galati, RO"
+        dates = "May 2008 - Nov 2018"
+        position = "Web Programmer"
+        [[params.experience.list.projects]]
+            title = "CRM application for VOIP company - USA"
+            details = "A comprehensive CRM system managing phone number acquisition, E911 provisioning, fax services, call statistics and billing."
+            impact = "Increased operational efficiency and reduced customer onboarding."
+            stack = "Golang, Mysql, Redis, PubNub"
+        [[params.experience.list.projects]]
+            title = "Newspaper redaction web application - RO"
+            details = "Content writing, content validating, generate documents for DTP, generate reporting."
+            impact = "Reduced time-to-publish, improved content quality through streamlined validation processes and reduced manual processing time."
+            stack = "PHP, Mysql, HTML/CSS, jQuery, Joomla"
+        [[params.experience.list.projects]]
+            title = "Newspaper small advertisement application - RO"
+            details = "Web application for content creation, validation, and document generation for DTP purposes."
+            stack = "PHP, Mysql, HTML, jQuery, Joomla"
+        [[params.experience.list.projects]]
+            title = "Web application register tape advertising - USA"
+            details = "Application to manage ad uploads, testimonials, and shipment tracking for registered tapes."
+            stack = "PHP, Mysql, HTML, jQuery, Joomla"
+
+    [params.projects]
+        enable = false
+
+        [[params.projects.list]]
+        title = "Project Lorem Ipsum"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+
+        [[params.projects.list]]
+        title = "Project Sed Fringilla"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+        [[params.projects.list]]
+        title = "Project Praesent"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+
+    [params.information]
+        enable = false
+
+        [[params.information.list]]
+        title = "Papers"
+        [[params.information.list.items]]
+        details = "2018 · Lorem Ipsum"
+        [[params.information.list.items]]
+        details = "2016 · Sed Fringilla"
+
+        [[params.information.list]]
+        title = "Interests"
+        details = "Climbing, Snowboarding, Photography, Travelling"
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "//github.com/lciprian"
+        title = "lciprian"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "//linkedin.com/in/lciprian/"
+        title = "lciprian"
+        [[params.social.list]]
+        icon = "fab fa-twitter-square"
+        url = "//x.com/CiprianLazar"
+        title = "@CiprianLazar"

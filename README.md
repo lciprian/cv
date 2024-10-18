@@ -4,4 +4,4 @@ Built with:
 
 * GoLang
 * Hugo
-* Almeida CV theme
+* DevResume CV theme
