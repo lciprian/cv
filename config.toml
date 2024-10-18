@@ -1,12 +1,12 @@
 # Page settings
-baseURL = "http://example.org/"
+baseURL = "https://lciprian.github.io/cv/"
 languageCode = "en"
-title = ""
+title = "Ciprian Lazar"
 theme = "hugo-devresume-theme"
-googleAnalytics = ""
+googleAnalytics = "G-L1XTSMJCLP"
 
 [params]
-    author = "CowboySmall"
+    author = "Ciprian Lazar"
     description = "DevResume - Bootstrap 4 Resume/CV Template For Software Developers"
 
     primaryColor = "#3f6592"
@@ -14,9 +14,9 @@ googleAnalytics = ""
 
     [params.profile]
         enable = true
-        name = "Lazar Ciprian"
+        name = "Ciprian Lazar"
         tagline = "Senior Software Engineer"
-        avatar = "lazar_ciprian.png"
+        avatar = "ciprian_lazar.jpg"
 
     [params.contact]
         enable = true
