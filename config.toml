@@ -31,9 +31,9 @@ googleAnalytics = "G-L1XTSMJCLP"
         url = "mailto:lazar.ciprian07@gmail.com"
         text = "lazar.ciprian07@gmail.com"
         [[params.contact.list]]
-        icon = "fas fa-globe"
+        icon = "fa fa-linkedin"
         url = "//github.com/lciprian"
-        text = "github.com/lciprian"
+        text = "lciprian"
 
     [params.skills]
         enable = true
