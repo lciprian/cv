@@ -203,10 +203,166 @@ a.resume-link {
 	    border-left: 0;
     }
 }
+    @media print {
 
+    $grid-breakpoints-print: (lg: 992px); // keep breakpoint that you would like to apply for print
 
+    /* Rewrite margins, padding, display & alignment to keep the LG and not the mobile ones */
+        @each $breakpoint in map-keys($grid-breakpoints-print) {
+            $infix: breakpoint-infix($breakpoint, $grid-breakpoints-print);
 
+            // rewrite all displays for your print breakpoint
+            @each $value in $displays {
+                .d#{$infix}-#{$value} {
+                    display: $value !important;
 
+                    @each $v in $displays {
+                        &.d-#{$v} {
+                            display: $value !important;
+
+                            &.d-print-none,
+                            &.table__sort {
+                                display: none !important;
+                            }
+                        }
+                    }
+
+                    &.d-print-none {
+                        display: none !important;
+                    }
+                }
+            }
+
+            // rewrite all spacings for your print breakpoint
+            @each $prop, $abbrev in (margin: m, padding: p) {
+                @each $size, $length in $spacers {
+                    .#{$abbrev}#{$infix}-#{$size} {
+                        #{$prop}: $length !important;
+
+                        @each $s, $l in $spacers {
+                            &.#{$abbrev}-#{$s},
+                            &.#{$abbrev}-auto {
+                                #{$prop}: $length !important;
+                            }
+                        }
+                    }
+
+                    .#{$abbrev}t#{$infix}-#{$size},
+                    .#{$abbrev}y#{$infix}-#{$size} {
+                        #{$prop}-top: $length !important;
+
+                        @each $s, $l in $spacers {
+                            &.#{$abbrev}t-#{$s},
+                            &.#{$abbrev}y-#{$s},
+                            &.#{$abbrev}t-auto,
+                            &.#{$abbrev}y-auto {
+                                #{$prop}-top: $length !important;
+                            }
+                        }
+                    }
+
+                    .#{$abbrev}r#{$infix}-#{$size},
+                    .#{$abbrev}x#{$infix}-#{$size} {
+                        #{$prop}-right: $length !important;
+
+                        @each $s, $l in $spacers {
+                            &.#{$abbrev}r-#{$s},
+                            &.#{$abbrev}x-#{$s},
+                            &.#{$abbrev}r-auto,
+                            &.#{$abbrev}x-auto {
+                                #{$prop}-right: $length !important;
+                            }
+                        }
+                    }
+
+                    .#{$abbrev}b#{$infix}-#{$size},
+                    .#{$abbrev}y#{$infix}-#{$size} {
+                        #{$prop}-bottom: $length !important;
+
+                        @each $s, $l in $spacers {
+                            &.#{$abbrev}b-#{$s},
+                            &.#{$abbrev}y-#{$s},
+                            &.#{$abbrev}b-auto,
+                            &.#{$abbrev}y-auto {
+                                #{$prop}-bottom: $length !important;
+                            }
+                        }
+                    }
+
+                    .#{$abbrev}l#{$infix}-#{$size},
+                    .#{$abbrev}x#{$infix}-#{$size} {
+                        #{$prop}-left: $length !important;
+
+                        @each $s, $l in $spacers {
+                            &.#{$abbrev}l-#{$s},
+                            &.#{$abbrev}x-#{$s},
+                            &.#{$abbrev}l-auto,
+                            &.#{$abbrev}x-auto {
+                                #{$prop}-left: $length !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // rewrite all text alignments for your print breakpoint
+            .text#{$infix}-left {
+                text-align: left !important;
+
+                &.text-left,
+                &.text-right,
+                &.text-center {
+                    text-align: left !important;
+                }
+            }
+
+            .text#{$infix}-right {
+                text-align: right !important;
+
+                &.text-left,
+                &.text-right,
+                &.text-center {
+                    text-align: right !important;
+                }
+            }
+
+            .text#{$infix}-center {
+                text-align: center !important;
+
+                &.text-left,
+                &.text-right,
+                &.text-center {
+                    text-align: center !important;
+                }
+            }
+        }
+
+        /* Rewrite grid to keep the LG and discard the mobile */
+        @for $i from 1 through 12 {
+            .col-lg-#{$i} {
+                flex: 0 0 #{percentage(round($i*8.33)/100)} !important;
+                max-width: #{percentage(round($i*8.33)/100)} !important;
+
+                @for $k from 1 through 12 {
+                    &.col-xs-#{$k},
+                    &.col-sm-#{$k},
+                    &.col-md-#{$k},
+                    &.col-#{$k} {
+                        flex: 0 0 #{percentage(round($i*8.33)/100)} !important;
+                        max-width: #{percentage(round($i*8.33)/100)} !important;
+                    }
+                }
+            }
+        }
+
+        /* Since the print will not fill background-colors you need to transform filled buttons into outline */
+        @each $color, $value in $theme-colors {
+            .btn-#{$color} {
+                color: $value !important;
+                background-color: $white !important;
+            }
+        }
+    }
 
 
 
